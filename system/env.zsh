@@ -1,4 +1,6 @@
-SUBLIME=/usr/local/bin/sublime
+SUBLIME='/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'
 if [ -f "$SUBLIME" ]; then
-  export EDITOR=/usr/local/bin/sublime
+  export EDITOR='subl -w'
 fi
+
+export HOMEBREW_GITHUB_API_TOKEN=xxx

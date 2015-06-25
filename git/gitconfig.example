@@ -1,9 +1,8 @@
-[credential]
 [color]
 	ui = true
 [user]
-	name = Danny Thomas
-	email = Danny.Thomas@blackboard.com
+	name = Noriaki Tatsumi
+	email = noriaki.tatsumi@gmail.com
 [push]
 	default = simple
 [pull]
@@ -12,24 +11,20 @@
 [alias]
     # Aliases mostly from https://github.com/durdn/cfg/blob/master/.gitconfig
     # per http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
+
     st = status -s
 
-    cl = clone
-
-    ci = commit
-    cm = commit -m
+    # skip add stage for tracked files
     cma = commit -a -m
-    ca = commit --amend
     amend = commit --amend
-    caa = commit -a --amend -C HEAD
+    # Use the last commit message and amend your stuff
+    amendl = commit -a --amend -C HEAD
     filelog = log -u
     fl = log -u
-
     ai = add --interactive
 
-    co = checkout
-    br = branch
     bra = branch -ra
+
     # list commands
     le = log --oneline --decorate
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --stat
@@ -39,6 +34,7 @@
     lc  = "!f() { git ll "$1"^.."$1"; }; f"
     lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
     lg = log --graph --oneline --decorate --all
+
     #list all aliases
     la = "!git config -l | grep alias | cut -c 7-"
     diff = diff --word-diff
@@ -88,13 +84,3 @@
 
     lasttag = describe --tags --abbrev=0
     lt = describe --tags --abbrev=0
-
-    #merges
-    ours = "!f() { git co --ours $@ && git add $@; }; f"
-    theirs = "!f() { git co --theirs $@ && git add $@; }; f"
-	p4r = p4 rebase
-	p4s = p4 submit
-[git-p4]
-	skipSubmitEdit = true
-[rebase]
-	autosquash = true

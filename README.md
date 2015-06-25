@@ -1,6 +1,6 @@
-# Danny's dotfiles #
+# Nori's dotfiles #
 
-Opinionated dotfiles repository for Mac OS with zsh and iTerm 2. Including Homebrew, Solarised and oh-my-zsh with the Agnoster theme.
+Opinionated dotfiles repository for Mac OS with zsh. Including Homebrew, Solarised and oh-my-zsh.
 
 Based on Zach Holman's dotfiles - https://github.com/holman/dotfiles.
 
@@ -8,14 +8,16 @@ Based on Zach Holman's dotfiles - https://github.com/holman/dotfiles.
 
 - Set `zsh` as your default shell: `chsh -s /bin/zsh`
 - Optionally, use Homebew to install the latest zsh and use `/usr/local/bin/zsh`. In this case, you need to add this path to `/etc/shells` before running `chsh`
-- Install iTerm 2 from http://iterm2.com/, but use Terminal for installation. Fonts, colour schemes and preferences lists are automatically installed, and iTerm2 will overwrite the new settings on exit
-- Alternatively, configure the terminal of your choosing with the 'Monaco for Powerline' font and the Solarized colour scheme
+- Assumes Sublime Text editor is installed
+- Use Terminal for installation. Fonts, color schemes and preferences lists are automatically installed, and iTerm2 will overwrite the new settings on exit
 
 ## Install ##
 
 - For a quick start, clone the repository `git clone <repopath> ~/.dotfiles`
 - Run the bootstrap to install the files `cd ~/.dotfiles; ./bootstrap.sh`
 - Restart your terminal
+
+Specify your HOMEBREW_GITHUB_API_TOKEN in `system/env.zsh`.
 
 Use `~/.localrc` to configure anything that you want to keep outside of the repository or private. For more than the most basic use, you should fork the repository as a basis for your own.
 

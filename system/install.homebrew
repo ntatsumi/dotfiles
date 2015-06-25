@@ -1,4 +1,9 @@
 coreutils
 grc
-the_platinum_searcher
+the_silver_searcher
 spark
+tree
+autojump
+curl
+wget
+openssl

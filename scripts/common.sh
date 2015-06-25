@@ -2,7 +2,7 @@
 #
 # common script functions and variables
 
-DOTFILES_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+DOTFILES_ROOT="`pwd`"
 
 set -e
 
